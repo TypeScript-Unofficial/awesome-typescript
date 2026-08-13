@@ -19,6 +19,7 @@ This file tracks the setup and maintenance of the repository. Each task is marke
 - [x] Verify full pipeline: type-check, validate, lint, format, test, generate (idempotent)
 - [x] Add Dependabot config (npm + GitHub Actions)
 - [x] Add CI status badges to README header
+- [ ] Set repo description (manual — no API token with repo-admin scope available)
 
 ## Publishing
 
