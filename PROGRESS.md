@@ -21,6 +21,6 @@ marked `[x]` when complete.
 
 ## Publishing
 
-- [ ] Commit changes in logical groups
+- [x] Commit changes in logical groups
 - [ ] Push to `TypeScript-Unofficial/awesome-typescript`
 - [ ] Confirm CI passes on the pushed branch
