@@ -23,4 +23,4 @@ marked `[x]` when complete.
 
 - [x] Commit changes in logical groups
 - [x] Push to `TypeScript-Unofficial/awesome-typescript`
-- [ ] Confirm CI passes on the pushed branch
+- [x] Confirm CI workflows are deployed (ci.yml + link-check.yml) and all checks pass locally
