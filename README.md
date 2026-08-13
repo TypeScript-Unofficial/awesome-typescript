@@ -1,4 +1,13 @@
-# Awesome TypeScript [![CI](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/ci.yml) [![Link Check](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/link-check.yml/badge.svg)](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/link-check.yml)
+# Awesome TypeScript
+
+[![CI](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/ci.yml)
+[![Link Check](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/link-check.yml/badge.svg)](https://github.com/TypeScript-Unofficial/awesome-typescript/actions/workflows/link-check.yml)
+[![License](https://img.shields.io/github/license/TypeScript-Unofficial/awesome-typescript)](LICENSE.txt)
+[![Stars](https://img.shields.io/github/stars/TypeScript-Unofficial/awesome-typescript)](https://github.com/TypeScript-Unofficial/awesome-typescript/stargazers)
+[![Forks](https://img.shields.io/github/forks/TypeScript-Unofficial/awesome-typescript)](https://github.com/TypeScript-Unofficial/awesome-typescript/network)
+[![Contributors](https://img.shields.io/github/contributors/TypeScript-Unofficial/awesome-typescript)](https://github.com/TypeScript-Unofficial/awesome-typescript/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/TypeScript-Unofficial/awesome-typescript)](https://github.com/TypeScript-Unofficial/awesome-typescript/commits/main)
+[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/TypeScript-Unofficial/awesome-typescript/)
 
 A curated list of TypeScript code and resources.
 

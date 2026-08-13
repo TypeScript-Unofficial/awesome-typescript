@@ -1,0 +1,8 @@
+# Generated output — formatting is controlled by the generator.
+README.md
+
+# Dependencies and build artifacts.
+node_modules/
+dist/
+build/
+coverage/

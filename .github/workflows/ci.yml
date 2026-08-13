@@ -5,9 +5,16 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  # ---------------------------------------------------------------------------
+  # Static analysis: type-check, validate source data, lint, and format.
+  # ---------------------------------------------------------------------------
   check:
-    name: Validate, lint, test, and check generated output
+    name: Type-check, validate, lint, and format
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,11 +37,48 @@ jobs:
       - name: Lint markdown
         run: npm run lint
 
-      - name: Check formatting
+      - name: Check formatting (Prettier)
         run: npm run format:check
+
+  # ---------------------------------------------------------------------------
+  # Tests.
+  # ---------------------------------------------------------------------------
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run tests
         run: npm test
+
+  # ---------------------------------------------------------------------------
+  # Generated output: regenerate the README and fail if it differs from the
+  # committed version, so the source of truth and the public list never drift.
+  # ---------------------------------------------------------------------------
+  generate:
+    name: Verify generated README is in sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Regenerate README
         run: npm run generate
@@ -45,3 +89,14 @@ jobs:
             echo "::error::README.md is out of sync. Run 'npm run generate' and commit the result."
             exit 1
           fi
+
+  # ---------------------------------------------------------------------------
+  # EditorConfig conformance.
+  # ---------------------------------------------------------------------------
+  editorconfig:
+    name: Check EditorConfig conformance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: editorconfig-checker/action-editorconfig-checker@v2
+      - run: editorconfig-checker
