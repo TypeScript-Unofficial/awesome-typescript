@@ -1,0 +1,33 @@
+name: Bug report
+description: Report an incorrect or broken entry, or a problem with the tooling.
+title: "Bug: <short summary>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please provide as much detail as possible.
+  - type: textarea
+    id: what
+    attributes:
+      label: What is incorrect?
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL or entry
+      description: The affected entry or link.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected correction
+      description: What should the correct value or behavior be?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other relevant information.

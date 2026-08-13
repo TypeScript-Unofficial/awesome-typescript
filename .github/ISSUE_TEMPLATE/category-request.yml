@@ -1,0 +1,31 @@
+name: Category request
+description: Propose a new category for the curated list.
+title: "Category: <proposed category>"
+labels: ["category"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the list's organization! Please read
+        [CONTRIBUTING.md](../../CONTRIBUTING.md) first.
+  - type: input
+    id: category
+    attributes:
+      label: Proposed category
+      description: The category id and title you would like to add.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why are existing categories insufficient?
+      description: Explain why this new category is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example projects
+      description: List projects that would belong in this category.
+    validations:
+      required: true

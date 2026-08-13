@@ -1,0 +1,67 @@
+name: Add project
+description: Suggest a project to add to the curated list.
+title: "Add: <project name>"
+labels: ["add-project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please read [CONTRIBUTING.md](../../CONTRIBUTING.md) first.
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      description: The account/repository name, e.g. `microsoft/TypeScript`.
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL
+      description: HTTPS URL to the GitHub repository.
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: npm package URL (optional)
+      description: HTTPS URL to the npm package, if the project publishes one.
+  - type: input
+    id: category
+    attributes:
+      label: Suggested category
+      description: A category id from `src/categories.ts`, e.g. `libraries/http`.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: One short, objective sentence explaining what the project does.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this project belong in the list?
+      description: Explain its relevance to TypeScript developers.
+    validations:
+      required: true
+  - type: textarea
+    id: adoption
+    attributes:
+      label: Adoption / popularity evidence
+      description: Stars, weekly npm downloads, or other evidence of meaningful adoption.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: This project is relevant to TypeScript developers.
+          required: true
+        - label: The project is not already listed.
+          required: true
+        - label: The project meets the acceptance criteria in CONTRIBUTING.md.
+          required: true
