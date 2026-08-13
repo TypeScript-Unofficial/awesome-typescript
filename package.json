@@ -1,0 +1,28 @@
+{
+  "name": "awesome-typescript",
+  "version": "1.0.0",
+  "description": "A curated list of TypeScript code and resources.",
+  "private": true,
+  "type": "module",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "generate": "tsx scripts/generate.ts",
+    "check:links": "tsx scripts/check-links.ts",
+    "lint": "markdownlint-cli2 \"**/*.md\" \"!node_modules\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "check": "npm run validate && npm run generate && npm run lint && npm run format:check && npm run test && npm run check:links"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "markdownlint-cli2": "^0.14.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
