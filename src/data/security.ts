@@ -3,8 +3,16 @@ import type { Entry } from "../types.js";
 /** Libraries and tools for securing TypeScript applications. */
 export const security: Entry[] = [
   // ---------------------------------------------------------------------------
-  // Cryptography
+  // Security Testing
   // ---------------------------------------------------------------------------
+  {
+    category: "security/cryptography",
+    name: "dchest/tweetnacl-js",
+    repository: "https://github.com/dchest/tweetnacl-js",
+    package: "tweetnacl",
+    packageUrl: "https://www.npmjs.com/package/tweetnacl",
+    description: "Cryptographic library implementing the TweetNaCl crypto.",
+  },
   {
     category: "security/cryptography",
     name: "dcodeIO/bcrypt.js",
@@ -21,10 +29,12 @@ export const security: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/node-forge",
     description: "Native implementations of TLS and cryptographic tools in JavaScript.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Security Testing
-  // ---------------------------------------------------------------------------
+  {
+    category: "security/testing",
+    name: "returntocorp/semgrep",
+    repository: "https://github.com/semgrep/semgrep",
+    description: "Lightweight static analysis for finding bugs and vulnerabilities.",
+  },
   {
     category: "security/testing",
     name: "snyk/snyk",

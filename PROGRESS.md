@@ -1,7 +1,6 @@
 # Progress
 
-This file tracks the setup and maintenance of the repository. Each task is
-marked `[x]` when complete.
+This file tracks the setup and maintenance of the repository. Each task is marked `[x]` when complete.
 
 ## Initial setup
 
@@ -16,8 +15,10 @@ marked `[x]` when complete.
 - [x] Add GitHub Actions pipelines (CI + link check)
 - [x] Add issue templates and pull request template
 - [x] Add documentation (README, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, LICENSE)
-- [x] Curate 153 verified TypeScript projects (284 URLs checked)
+- [x] Curate 213 verified TypeScript projects (391 URLs checked)
 - [x] Verify full pipeline: type-check, validate, lint, format, test, generate (idempotent)
+- [x] Add Dependabot config (npm + GitHub Actions)
+- [x] Add CI status badges to README header
 
 ## Publishing
 

@@ -3,7 +3,7 @@ import type { Entry } from "../types.js";
 /** Libraries and tools for the Node.js runtime. */
 export const nodejs: Entry[] = [
   // ---------------------------------------------------------------------------
-  // Frameworks
+  // Process Management
   // ---------------------------------------------------------------------------
   {
     category: "nodejs/frameworks",
@@ -31,15 +31,22 @@ export const nodejs: Entry[] = [
   },
   {
     category: "nodejs/frameworks",
+    name: "moleculerjs/moleculer",
+    repository: "https://github.com/moleculerjs/moleculer",
+    package: "moleculer",
+    packageUrl: "https://www.npmjs.com/package/moleculer",
+    description: "Progressive microservices framework for Node.js.",
+  },
+  {
+    category: "nodejs/frameworks",
     name: "sveltejs/kit",
     repository: "https://github.com/sveltejs/kit",
     package: "@sveltejs/kit",
     packageUrl: "https://www.npmjs.com/package/@sveltejs/kit",
     description: "Web development framework for building fast applications with Svelte.",
   },
-
   // ---------------------------------------------------------------------------
-  // Process Management
+  // File System
   // ---------------------------------------------------------------------------
   {
     category: "nodejs/process-management",
@@ -51,15 +58,22 @@ export const nodejs: Entry[] = [
   },
   {
     category: "nodejs/process-management",
+    name: "remy/nodemon",
+    repository: "https://github.com/remy/nodemon",
+    package: "nodemon",
+    packageUrl: "https://www.npmjs.com/package/nodemon",
+    description: "Monitor for any changes in your source and restart your server.",
+  },
+  {
+    category: "nodejs/process-management",
     name: "sindresorhus/execa",
     repository: "https://github.com/sindresorhus/execa",
     package: "execa",
     packageUrl: "https://www.npmjs.com/package/execa",
     description: "Process execution for humans with a modern API.",
   },
-
   // ---------------------------------------------------------------------------
-  // File System
+  // Streams
   // ---------------------------------------------------------------------------
   {
     category: "nodejs/filesystem",
@@ -71,16 +85,31 @@ export const nodejs: Entry[] = [
   },
   {
     category: "nodejs/filesystem",
+    name: "jprichardson/node-fs-extra",
+    repository: "https://github.com/jprichardson/node-fs-extra",
+    package: "fs-extra",
+    packageUrl: "https://www.npmjs.com/package/fs-extra",
+    description: "Extra methods for the fs module.",
+  },
+  {
+    category: "nodejs/filesystem",
     name: "sindresorhus/globby",
     repository: "https://github.com/sindresorhus/globby",
     package: "globby",
     packageUrl: "https://www.npmjs.com/package/globby",
     description: "User-friendly glob matching with a Promise API.",
   },
-
   // ---------------------------------------------------------------------------
-  // Streams
+  // Workers
   // ---------------------------------------------------------------------------
+  {
+    category: "nodejs/streams",
+    name: "caolan/highland",
+    repository: "https://github.com/caolan/highland",
+    package: "highland",
+    packageUrl: "https://www.npmjs.com/package/highland",
+    description: "High-level streams library for Node.js.",
+  },
   {
     category: "nodejs/streams",
     name: "mafintosh/through2",
@@ -97,10 +126,6 @@ export const nodejs: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/readable-stream",
     description: "Streams3, a user-land copy of the stream library from Node.js.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Workers
-  // ---------------------------------------------------------------------------
   {
     category: "nodejs/workers",
     name: "piscinajs/piscina",

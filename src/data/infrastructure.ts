@@ -3,7 +3,7 @@ import type { Entry } from "../types.js";
 /** Tools for deploying and operating TypeScript services. */
 export const infrastructure: Entry[] = [
   // ---------------------------------------------------------------------------
-  // Cloud
+  // Serverless
   // ---------------------------------------------------------------------------
   {
     category: "infrastructure/cloud",
@@ -23,16 +23,29 @@ export const infrastructure: Entry[] = [
   },
   {
     category: "infrastructure/cloud",
+    name: "azure/azure-sdk-for-js",
+    repository: "https://github.com/Azure/azure-sdk-for-js",
+    package: "@azure/storage-blob",
+    packageUrl: "https://www.npmjs.com/package/@azure/storage-blob",
+    description: "Azure SDK for JavaScript and TypeScript.",
+  },
+  {
+    category: "infrastructure/cloud",
     name: "googleapis/google-cloud-node",
     repository: "https://github.com/googleapis/google-cloud-node",
     package: "@google-cloud/storage",
     packageUrl: "https://www.npmjs.com/package/@google-cloud/storage",
     description: "Google Cloud client libraries for Node.js.",
   },
-
   // ---------------------------------------------------------------------------
-  // Serverless
+  // Containers
   // ---------------------------------------------------------------------------
+  {
+    category: "infrastructure/serverless",
+    name: "aws/aws-lambda-nodejs-runtime-interface-client",
+    repository: "https://github.com/aws/aws-lambda-nodejs-runtime-interface-client",
+    description: "AWS Lambda runtime interface client for Node.js.",
+  },
   {
     category: "infrastructure/serverless",
     name: "serverless/serverless",
@@ -49,9 +62,8 @@ export const infrastructure: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/sst",
     description: "Build full-stack serverless applications on AWS.",
   },
-
   // ---------------------------------------------------------------------------
-  // Containers
+  // Infrastructure as Code
   // ---------------------------------------------------------------------------
   {
     category: "infrastructure/containers",
@@ -65,10 +77,6 @@ export const infrastructure: Entry[] = [
     repository: "https://github.com/docker/compose",
     description: "Define and run multi-container applications with Docker.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Infrastructure as Code
-  // ---------------------------------------------------------------------------
   {
     category: "infrastructure/iac",
     name: "pulumi/pulumi",

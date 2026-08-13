@@ -3,8 +3,16 @@ import type { Entry } from "../types.js";
 /** Reusable libraries and frameworks for building TypeScript applications. */
 export const libraries: Entry[] = [
   // ---------------------------------------------------------------------------
-  // AI and LLM
+  // Authentication
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/ai",
+    name: "huggingface/transformers.js",
+    repository: "https://github.com/huggingface/transformers.js",
+    package: "@huggingface/transformers",
+    packageUrl: "https://www.npmjs.com/package/@huggingface/transformers",
+    description: "Run machine learning models in the browser and Node.js.",
+  },
   {
     category: "libraries/ai",
     name: "langchain-ai/langchainjs",
@@ -29,9 +37,8 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/ai",
     description: "TypeScript toolkit for building AI-powered applications.",
   },
-
   // ---------------------------------------------------------------------------
-  // Authentication
+  // Authorization
   // ---------------------------------------------------------------------------
   {
     category: "libraries/authentication",
@@ -51,15 +58,22 @@ export const libraries: Entry[] = [
   },
   {
     category: "libraries/authentication",
+    name: "nextauthjs/next-auth",
+    repository: "https://github.com/nextauthjs/next-auth",
+    package: "next-auth",
+    packageUrl: "https://www.npmjs.com/package/next-auth",
+    description: "Authentication for Next.js applications.",
+  },
+  {
+    category: "libraries/authentication",
     name: "panva/jose",
     repository: "https://github.com/panva/jose",
     package: "jose",
     packageUrl: "https://www.npmjs.com/package/jose",
     description: "JWA, JWS, JWE, JWT, JWK, and JWKS implementations for the web.",
   },
-
   // ---------------------------------------------------------------------------
-  // Authorization
+  // Backend Frameworks
   // ---------------------------------------------------------------------------
   {
     category: "libraries/authorization",
@@ -77,9 +91,8 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/oso",
     description: "Policy engine for expressing authorization logic.",
   },
-
   // ---------------------------------------------------------------------------
-  // Backend Frameworks
+  // CLI
   // ---------------------------------------------------------------------------
   {
     category: "libraries/backend",
@@ -99,6 +112,14 @@ export const libraries: Entry[] = [
   },
   {
     category: "libraries/backend",
+    name: "hapi/hapi",
+    repository: "https://github.com/hapijs/hapi",
+    package: "@hapi/hapi",
+    packageUrl: "https://www.npmjs.com/package/@hapi/hapi",
+    description: "Rich framework for building applications and services.",
+  },
+  {
+    category: "libraries/backend",
     name: "koajs/koa",
     repository: "https://github.com/koajs/koa",
     package: "koa",
@@ -114,10 +135,25 @@ export const libraries: Entry[] = [
     description:
       "Progressive Node.js framework for building efficient and scalable server-side applications.",
   },
-
+  {
+    category: "libraries/backend",
+    name: "trpc/trpc",
+    repository: "https://github.com/trpc/trpc",
+    package: "@trpc/server",
+    packageUrl: "https://www.npmjs.com/package/@trpc/server",
+    description: "End-to-end typesafe APIs made easy.",
+  },
   // ---------------------------------------------------------------------------
-  // CLI
+  // Configuration
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/cli",
+    name: "chalk/chalk",
+    repository: "https://github.com/chalk/chalk",
+    package: "chalk",
+    packageUrl: "https://www.npmjs.com/package/chalk",
+    description: "Terminal string styling for the terminal.",
+  },
   {
     category: "libraries/cli",
     name: "oclif/oclif",
@@ -125,6 +161,14 @@ export const libraries: Entry[] = [
     package: "oclif",
     packageUrl: "https://www.npmjs.com/package/oclif",
     description: "Framework for building command-line interfaces.",
+  },
+  {
+    category: "libraries/cli",
+    name: "sindresorhus/ink",
+    repository: "https://github.com/vadimdemedes/ink",
+    package: "ink",
+    packageUrl: "https://www.npmjs.com/package/ink",
+    description: "React for interactive command-line applications.",
   },
   {
     category: "libraries/cli",
@@ -150,10 +194,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/yargs",
     description: "Interactive command-line tools with argument parsing.",
   },
-
   // ---------------------------------------------------------------------------
-  // Configuration
+  // Date and Time
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/configuration",
+    name: "cosmiconfig/cosmiconfig",
+    repository: "https://github.com/cosmiconfig/cosmiconfig",
+    package: "cosmiconfig",
+    packageUrl: "https://www.npmjs.com/package/cosmiconfig",
+    description: "Find and load configuration from different locations.",
+  },
   {
     category: "libraries/configuration",
     name: "dotenvx/dotenvx",
@@ -170,10 +221,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/config",
     description: "Node.js application configuration management.",
   },
-
   // ---------------------------------------------------------------------------
-  // Date and Time
+  // Database
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/date-time",
+    name: "chrono-node/chrono",
+    repository: "https://github.com/wanasit/chrono",
+    package: "chrono-node",
+    packageUrl: "https://www.npmjs.com/package/chrono-node",
+    description: "Natural language date and time parser.",
+  },
   {
     category: "libraries/date-time",
     name: "date-fns/date-fns",
@@ -198,9 +256,8 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/moment",
     description: "Parse, validate, manipulate, and display dates and times.",
   },
-
   // ---------------------------------------------------------------------------
-  // Database
+  // HTTP
   // ---------------------------------------------------------------------------
   {
     category: "libraries/database",
@@ -228,15 +285,22 @@ export const libraries: Entry[] = [
   },
   {
     category: "libraries/database",
+    name: "sql.js/sql.js",
+    repository: "https://github.com/sql-js/sql.js",
+    package: "sql.js",
+    packageUrl: "https://www.npmjs.com/package/sql.js",
+    description: "SQLite compiled to WebAssembly for the browser.",
+  },
+  {
+    category: "libraries/database",
     name: "typeorm/typeorm",
     repository: "https://github.com/typeorm/typeorm",
     package: "typeorm",
     packageUrl: "https://www.npmjs.com/package/typeorm",
     description: "ORM for TypeScript and JavaScript that supports many databases.",
   },
-
   // ---------------------------------------------------------------------------
-  // HTTP
+  // Logging
   // ---------------------------------------------------------------------------
   {
     category: "libraries/http",
@@ -262,9 +326,16 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/@octokit/rest",
     description: "GitHub REST API client for JavaScript and TypeScript.",
   },
-
+  {
+    category: "libraries/http",
+    name: "undici/undici",
+    repository: "https://github.com/nodejs/undici",
+    package: "undici",
+    packageUrl: "https://www.npmjs.com/package/undici",
+    description: "An HTTP/1.1 client for Node.js.",
+  },
   // ---------------------------------------------------------------------------
-  // Logging
+  // Messaging
   // ---------------------------------------------------------------------------
   {
     category: "libraries/logging",
@@ -282,10 +353,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/winston",
     description: "A logger for just about everything.",
   },
-
   // ---------------------------------------------------------------------------
-  // Messaging
+  // ORM and Query Builders
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/messaging",
+    name: "amqp-node/amqplib",
+    repository: "https://github.com/amqp-node/amqplib",
+    package: "amqplib",
+    packageUrl: "https://www.npmjs.com/package/amqplib",
+    description: "An AMQP 0-9-1 client for Node.js.",
+  },
   {
     category: "libraries/messaging",
     name: "confluentinc/confluent-kafka-javascript",
@@ -302,9 +380,8 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/kafkajs",
     description: "A modern Apache Kafka client for Node.js.",
   },
-
   // ---------------------------------------------------------------------------
-  // ORM and Query Builders
+  // Parsing
   // ---------------------------------------------------------------------------
   {
     category: "libraries/orm",
@@ -324,6 +401,14 @@ export const libraries: Entry[] = [
   },
   {
     category: "libraries/orm",
+    name: "mikro-orm/mikro-orm",
+    repository: "https://github.com/mikro-orm/mikro-orm",
+    package: "@mikro-orm/core",
+    packageUrl: "https://www.npmjs.com/package/@mikro-orm/core",
+    description: "TypeScript ORM for SQL and NoSQL databases.",
+  },
+  {
+    category: "libraries/orm",
     name: "prisma/prisma",
     repository: "https://github.com/prisma/prisma",
     package: "@prisma/client",
@@ -338,10 +423,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/sequelize",
     description: "Promise-based ORM for Node.js supporting multiple SQL dialects.",
   },
-
   // ---------------------------------------------------------------------------
-  // Parsing
+  // Serialization
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/parsing",
+    name: "acornjs/acorn",
+    repository: "https://github.com/acornjs/acorn",
+    package: "acorn",
+    packageUrl: "https://www.npmjs.com/package/acorn",
+    description: "A small, fast JavaScript parser.",
+  },
   {
     category: "libraries/parsing",
     name: "cheeriojs/cheerio",
@@ -366,10 +458,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/parse-json",
     description: "Parse JSON with more helpful errors.",
   },
-
   // ---------------------------------------------------------------------------
-  // Serialization
+  // Validation
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/serialization",
+    name: "fastify/fast-json-stringify",
+    repository: "https://github.com/fastify/fast-json-stringify",
+    package: "fast-json-stringify",
+    packageUrl: "https://www.npmjs.com/package/fast-json-stringify",
+    description: "Fast JSON stringifier based on a schema.",
+  },
   {
     category: "libraries/serialization",
     name: "protobufjs/protobuf.js",
@@ -386,10 +485,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/class-transformer",
     description: "Transform plain objects into class instances and back.",
   },
-
   // ---------------------------------------------------------------------------
-  // Validation
+  // Testing
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/validation",
+    name: "ajv-validator/ajv",
+    repository: "https://github.com/ajv-validator/ajv",
+    package: "ajv",
+    packageUrl: "https://www.npmjs.com/package/ajv",
+    description: "A JSON schema validator.",
+  },
   {
     category: "libraries/validation",
     name: "colinhacks/zod",
@@ -414,10 +520,17 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/class-validator",
     description: "Decorator-based property validation for classes.",
   },
-
   // ---------------------------------------------------------------------------
-  // Testing
+  // Observability
   // ---------------------------------------------------------------------------
+  {
+    category: "libraries/testing",
+    name: "cypress-io/cypress",
+    repository: "https://github.com/cypress-io/cypress",
+    package: "cypress",
+    packageUrl: "https://www.npmjs.com/package/cypress",
+    description: "Fast, easy, and reliable testing for anything that runs in a browser.",
+  },
   {
     category: "libraries/testing",
     name: "jestjs/jest",
@@ -436,15 +549,30 @@ export const libraries: Entry[] = [
   },
   {
     category: "libraries/testing",
+    name: "playwright/playwright",
+    repository: "https://github.com/microsoft/playwright",
+    package: "playwright",
+    packageUrl: "https://www.npmjs.com/package/playwright",
+    description: "Cross-browser automation and testing framework.",
+  },
+  {
+    category: "libraries/testing",
+    name: "testing-library/react-testing-library",
+    repository: "https://github.com/testing-library/react-testing-library",
+    package: "@testing-library/react",
+    packageUrl: "https://www.npmjs.com/package/@testing-library/react",
+    description: "Simple and complete DOM testing utilities for React.",
+  },
+  {
+    category: "libraries/testing",
     name: "vitest-dev/vitest",
     repository: "https://github.com/vitest-dev/vitest",
     package: "vitest",
     packageUrl: "https://www.npmjs.com/package/vitest",
     description: "A unit test framework powered by Vite.",
   },
-
   // ---------------------------------------------------------------------------
-  // Observability
+  // WebSockets
   // ---------------------------------------------------------------------------
   {
     category: "libraries/observability",
@@ -462,9 +590,8 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/@sentry/node",
     description: "Official Sentry SDK for JavaScript and TypeScript.",
   },
-
   // ---------------------------------------------------------------------------
-  // WebSockets
+  // Utilities
   // ---------------------------------------------------------------------------
   {
     category: "libraries/websockets",
@@ -482,10 +609,30 @@ export const libraries: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/ws",
     description: "A simple and thoroughly tested WebSocket client and server.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Utilities
-  // ---------------------------------------------------------------------------
+  {
+    category: "libraries/utilities",
+    name: "effect-ts/effect",
+    repository: "https://github.com/Effect-TS/effect",
+    package: "effect",
+    packageUrl: "https://www.npmjs.com/package/effect",
+    description: "A TypeScript library for building robust applications.",
+  },
+  {
+    category: "libraries/utilities",
+    name: "fp-ts/fp-ts",
+    repository: "https://github.com/gcanti/fp-ts",
+    package: "fp-ts",
+    packageUrl: "https://www.npmjs.com/package/fp-ts",
+    description: "Functional programming in TypeScript.",
+  },
+  {
+    category: "libraries/utilities",
+    name: "immutable-js/immutable-js",
+    repository: "https://github.com/immutable-js/immutable-js",
+    package: "immutable",
+    packageUrl: "https://www.npmjs.com/package/immutable",
+    description: "Immutable persistent data collections for JavaScript.",
+  },
   {
     category: "libraries/utilities",
     name: "lodash/lodash",

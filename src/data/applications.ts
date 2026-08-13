@@ -3,7 +3,7 @@ import type { Entry } from "../types.js";
 /** Applications written in or powered by TypeScript. */
 export const applications: Entry[] = [
   // ---------------------------------------------------------------------------
-  // CLI Applications
+  // Desktop Applications
   // ---------------------------------------------------------------------------
   {
     category: "applications/cli",
@@ -29,9 +29,16 @@ export const applications: Entry[] = [
     packageUrl: "https://www.npmjs.com/package/serve",
     description: "Static file serving and directory listing.",
   },
-
+  {
+    category: "applications/cli",
+    name: "vercel/vercel",
+    repository: "https://github.com/vercel/vercel",
+    package: "vercel",
+    packageUrl: "https://www.npmjs.com/package/vercel",
+    description: "Command-line interface for deploying to Vercel.",
+  },
   // ---------------------------------------------------------------------------
-  // Desktop Applications
+  // Developer Applications
   // ---------------------------------------------------------------------------
   {
     category: "applications/desktop",
@@ -47,10 +54,21 @@ export const applications: Entry[] = [
     repository: "https://github.com/tauri-apps/tauri",
     description: "Build smaller, faster, and more secure desktop applications with a web frontend.",
   },
-
+  {
+    category: "applications/desktop",
+    name: "toeverything/AFFiNE",
+    repository: "https://github.com/toeverything/AFFiNE",
+    description: "Local-first knowledge base with a collaborative canvas.",
+  },
   // ---------------------------------------------------------------------------
-  // Developer Applications
+  // Web Applications
   // ---------------------------------------------------------------------------
+  {
+    category: "applications/developer",
+    name: "coder/code-server",
+    repository: "https://github.com/coder/code-server",
+    description: "Run VS Code on a remote server and access it in the browser.",
+  },
   {
     category: "applications/developer",
     name: "microsoft/vscode",
@@ -69,15 +87,26 @@ export const applications: Entry[] = [
     repository: "https://github.com/stoplightio/studio",
     description: "API design and documentation tooling with a visual editor.",
   },
-
   // ---------------------------------------------------------------------------
-  // Web Applications
+  // Games
   // ---------------------------------------------------------------------------
+  {
+    category: "applications/web",
+    name: "appwrite/appwrite",
+    repository: "https://github.com/appwrite/appwrite",
+    description: "Backend server for web and mobile applications.",
+  },
   {
     category: "applications/web",
     name: "calcom/cal.com",
     repository: "https://github.com/calcom/cal.com",
     description: "Open-source scheduling infrastructure for everyone.",
+  },
+  {
+    category: "applications/web",
+    name: "directus/directus",
+    repository: "https://github.com/directus/directus",
+    description: "Real-time headless CMS with a data platform.",
   },
   {
     category: "applications/web",
@@ -87,14 +116,22 @@ export const applications: Entry[] = [
   },
   {
     category: "applications/web",
+    name: "nocodb/nocodb",
+    repository: "https://github.com/nocodb/nocodb",
+    description: "Open-source Airtable alternative built on a database.",
+  },
+  {
+    category: "applications/web",
+    name: "outline/outline",
+    repository: "https://github.com/outline/outline",
+    description: "Team knowledge base and wiki for modern teams.",
+  },
+  {
+    category: "applications/web",
     name: "supabase/supabase",
     repository: "https://github.com/supabase/supabase",
     description: "Open-source Firebase alternative with a Postgres backend.",
   },
-
-  // ---------------------------------------------------------------------------
-  // Games
-  // ---------------------------------------------------------------------------
   {
     category: "applications/games",
     name: "colyseus/colyseus",
@@ -102,6 +139,14 @@ export const applications: Entry[] = [
     package: "colyseus",
     packageUrl: "https://www.npmjs.com/package/colyseus",
     description: "Multiplayer game server framework with a realtime API.",
+  },
+  {
+    category: "applications/games",
+    name: "melonjs/melonJS",
+    repository: "https://github.com/melonjs/melonJS",
+    package: "melonjs",
+    packageUrl: "https://www.npmjs.com/package/melonjs",
+    description: "HTML5 game engine for building 2D games.",
   },
   {
     category: "applications/games",
