@@ -499,6 +499,7 @@ Resources for learning TypeScript.
 ### Books
 
 - [basarat/typescript-book](https://github.com/basarat/typescript-book) - The definitive guide to TypeScript, written in the open.
+- [gibbok/typescript-book](https://github.com/gibbok/typescript-book) - A free and open-source TypeScript book covering fundamentals through advanced concepts.
 - [mike-north/effective-typescript](https://github.com/danvk/effective-typescript) - Source code and errata for the book Effective TypeScript.
 
 ### Articles
