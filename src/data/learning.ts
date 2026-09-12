@@ -58,6 +58,13 @@ export const learning: Entry[] = [
   },
   {
     category: "learning/books",
+    name: "gibbok/typescript-book",
+    repository: "https://github.com/gibbok/typescript-book",
+    description:
+      "A free and open-source TypeScript book covering fundamentals through advanced concepts.",
+  },
+  {
+    category: "learning/books",
     name: "mike-north/effective-typescript",
     repository: "https://github.com/danvk/effective-typescript",
     description: "Source code and errata for the book Effective TypeScript.",
