@@ -19,7 +19,7 @@
     "check": "npm run validate && npm run generate && npm run lint && npm run format:check && npm run test && npm run check:links"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4",
+    "@types/node": "^26.5.1",
     "markdownlint-cli2": "^0.14.0",
     "prettier": "^3.3.3",
     "tsx": "^4.19.1",
